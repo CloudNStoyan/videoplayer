@@ -1,0 +1,11 @@
+*[hoverable] {
+	cursor: pointer;
+}
+
+*[hoverable]:hover {
+	color: red;
+}
+
+*[hidden] {
+	display: none;
+}
