@@ -54,3 +54,11 @@ volume.addEventListener('click',function() {
 	
 	
 });
+
+
+function CreateVideo(src,id) {
+	var vid = document.createElement('video');
+	vid.id = id;
+	vid.src = src;
+	document.body.appendChild(vid);
+}
