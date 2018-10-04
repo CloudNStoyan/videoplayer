@@ -27,6 +27,13 @@ barProgress.addEventListener('change',function(e) {
 	video.currentTime = skipTo;
 });
 
+let canvas = document.getElementById('canvas');
+let context = canvas.getContext('2d');
+
+let interval = setInterval(function() { 
+	context.drawImage(video,0,0,100,100); 
+},16.666666666668)
+
 video.addEventListener('timeupdate',function() {
 	let rangeValue = Math.round(video.currentTime / (video.duration / 100));
 	barProgress.value = rangeValue;
@@ -54,7 +61,6 @@ volume.addEventListener('click',function() {
 	
 	
 });
-
 
 function CreateVideo(src,id) {
 	var vid = document.createElement('video');
