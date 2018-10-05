@@ -31,7 +31,7 @@ let canvas = document.getElementById('canvas');
 let context = canvas.getContext('2d');
 
 let interval = setInterval(function() { 
-	context.drawImage(video,0,0,100,100); 
+	context.drawImage(video,0,0,320,176); 
 },16.666666666668)
 
 video.addEventListener('timeupdate',function() {
