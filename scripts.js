@@ -1,6 +1,6 @@
-let video = document.getElementById('video');
-let playButton = document.getElementById('play');
-let pauseButton = document.getElementById('pause');
+let video = document.querySelector('#video');
+let playButton = document.querySelector('#play');
+let pauseButton = document.querySelector('#pause');
 
 playButton.addEventListener('click',function(e) {
 	e.preventDefault();
@@ -19,7 +19,7 @@ video.addEventListener('ended',function() {
 	playButton.removeAttribute('hidden');
 });
 
-let barProgress = document.getElementById('bar');
+let barProgress = document.querySelector('#bar');
 barProgress.addEventListener('change',function(e) {
 	let inputValue = barProgress.value;
 	let duration = video.duration;
@@ -27,7 +27,7 @@ barProgress.addEventListener('change',function(e) {
 	video.currentTime = skipTo;
 });
 
-let canvas = document.getElementById('canvas');
+let canvas = document.querySelector('#canvas');
 let context = canvas.getContext('2d');
 
 let interval = setInterval(function() { 
@@ -40,12 +40,12 @@ video.addEventListener('timeupdate',function() {
 	console.log(rangeValue);
 });
 
-let volumeProgress = document.getElementById('volumeProgress');
+let volumeProgress = document.querySelector('#volumeProgress');
 volumeProgress.addEventListener('change',function() {
 	video.volume = volumeProgress.value / 10;
 });
 
-let volume = document.getElementById('volume');
+let volume = document.querySelector('#volume');
 volume.addEventListener('click',function() {
 	if (this.getAttribute('muted') != null) {
 		this.removeAttribute('muted');
