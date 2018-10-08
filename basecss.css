@@ -6,6 +6,16 @@
 	color: lightblue;
 }
 
+body {
+	background-color: gray;
+}
+
+main {
+	background-color: lightgrey;
+	width: 320px;
+	border: 1px solid black;
+}
+
 *[hidden] {
 	display: none;
 }
