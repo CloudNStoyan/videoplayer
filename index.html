@@ -6,19 +6,18 @@
 	<link rel="stylesheet" href="basecss.css">
 </head>
 <body>
-<main>
+<main head-controller>
 	<div id="video-container">
 		<video id="video" src="https://www.w3schools.com/Html/mov_bbb.mp4"></video>
-		<div id="layout">Dwarf</div>
 	</div>
-	<div id="progress">
-		<input type="range" min="1" max="100" value="1" id="bar" style="width: 315px"/>
+	<div id="progress" class="control">
+		<input type="range" min="1" max="100" value="1" id="bar"/>
 	</div>
-	<div id="controller">
-		<i class="fa fa-play" hoverable id="play" style="font-size:24px"></i>
-		<i class="fa fa-pause" hoverable id="pause" style="font-size:24px" hidden></i>
-		<i class="fa fa-volume-up" hoverable style="font-size:24px" id="volume"></i>
-		<input type="range" min="0" max="10" value="10" id="volumeProgress" style="width: 35px" />
+	<div id="controller" class="control">
+		<i class="fa fa-play" hoverable id="play"></i>
+		<i class="fa fa-pause" hoverable id="pause" hidden></i>
+		<i class="fa fa-volume-up" hoverable id="volume"></i>
+		<input type="range" min="0" max="10" value="10" id="volumeProgress"/>
 	</div>
 </main>
 <script src="scripts.js"></script>

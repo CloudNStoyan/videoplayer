@@ -16,17 +16,6 @@ main {
 	border: 1px solid black;
 }
 
-#video {
-	position: relative;
-	z-index: 0;
-}
-
-#layout {
-	top:0;
-	left:0;
-	z-index:1;
-}
-
 *[hidden] {
 	display: none;
 }
@@ -50,4 +39,48 @@ input[type=range]::-webkit-slider-thumb {
     height: 15px;
     background: white;
     cursor: pointer;
+}
+
+#progress {
+	position: absolute;
+	top: 148px;
+	width: 321px;
+	left: 6px;
+}
+
+#controller {
+	position: absolute;
+	top: 164px;
+	width: 321px;
+}
+
+#controller input[type=range] {
+	width: 35px;
+	position: relative;
+	left: 230px;
+}
+
+#volume {
+	position: relative;
+	left: 230px;
+}
+
+.fa {
+	font-size: 20px;
+}
+
+#video-container {
+	height: 175px
+}
+
+#video-container:hover ~ .control{
+	visibility: visible;
+}
+
+.control {
+	visibility: hidden;
+}
+
+.control:hover ~.control{
+	visibility: visible;
 }
