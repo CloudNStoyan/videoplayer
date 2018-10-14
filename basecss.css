@@ -73,14 +73,14 @@ input[type=range]::-webkit-slider-thumb {
 	height: 175px
 }
 
-#video-container:hover ~ .control{
+#video-container:hover ~ #head-controller{
 	visibility: visible;
 }
 
-.control {
+#head-controller {
 	visibility: hidden;
 }
 
-.control:hover ~.control{
+#head-controller:hover {
 	visibility: visible;
 }
