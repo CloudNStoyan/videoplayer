@@ -33,6 +33,10 @@ video.addEventListener('timeupdate',function() {
 	console.log(rangeValue);
 });
 
+document.querySelector('#video-container').addEventListener('dblclick',function() {
+	video.webkitEnterFullScreen();
+});
+
 let volumeProgress = document.querySelector('#volumeProgress');
 volumeProgress.addEventListener('change',function() {
 	video.volume = volumeProgress.value / 10;
