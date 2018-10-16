@@ -33,9 +33,18 @@ video.addEventListener('timeupdate',function() {
 	console.log(rangeValue);
 });
 
+let headController = document.getElementById('head-controller');
 document.querySelector('#video-container').addEventListener('dblclick',function() {
+	headController.removeAttribute('class')
 	video.webkitEnterFullScreen();
 });
+
+video.addEventListener("webkitfullscreenchange",function(){
+    if (!document.webkitIsFullScreen) {
+		console.log("You leaved fullscreen!")
+		headController.setAttribute('class','hidden')
+	}
+}, false);
 
 let volumeProgress = document.querySelector('#volumeProgress');
 volumeProgress.addEventListener('change',function() {

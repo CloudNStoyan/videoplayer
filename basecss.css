@@ -77,10 +77,22 @@ input[type=range]::-webkit-slider-thumb {
 	visibility: visible;
 }
 
-#head-controller {
+#head-controller.hidden {
+	visibility: hidden;
+	z-index: 2147483648;
+}
+
+.hidden {
 	visibility: hidden;
 }
 
 #head-controller:hover {
 	visibility: visible;
+}
+
+video::-webkit-media-controls {
+	display:none !important;
+}
+#video-container:-webkit-full-screen {
+    width: 100%;
 }
