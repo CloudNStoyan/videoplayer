@@ -64,6 +64,9 @@ volume.addEventListener('click',function() {
 		video.volume = 0;
 		volumeProgress.setAttribute('hidden','');
 	}
-	
-	
 });
+
+let expand = document.querySelector('#expand');
+expand.addEventListener('click',function() {
+	video.webkitEnterFullScreen();
+})
