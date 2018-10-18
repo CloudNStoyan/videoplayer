@@ -57,12 +57,12 @@ volume.addEventListener('click',function() {
 		this.removeAttribute('muted');
 		video.volume = volumeProgress.value / 10
 		this.setAttribute('class','fa fa-volume-up');
-		volumeProgress.removeAttribute('hidden');
+		volumeProgress.removeAttribute('class');
 	} else {
 		this.setAttribute('muted','');
 		this.setAttribute('class','fa fa-volume-off');
 		video.volume = 0;
-		volumeProgress.setAttribute('hidden','');
+		volumeProgress.setAttribute('class','hidden');
 	}
 });
 

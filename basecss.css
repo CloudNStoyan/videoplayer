@@ -57,12 +57,17 @@ input[type=range]::-webkit-slider-thumb {
 #controller input[type=range] {
 	width: 35px;
 	position: relative;
-	left: 230px;
+	left: 210px;
 }
 
 #volume {
 	position: relative;
-	left: 230px;
+	left: 210px;
+}
+
+#expand {
+	position: relative;
+	left: 210px;
 }
 
 .fa {
