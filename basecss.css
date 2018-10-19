@@ -63,11 +63,13 @@ input[type=range]::-webkit-slider-thumb {
 #volume {
 	position: relative;
 	left: 210px;
+	z-index: 2147483648;
 }
 
 #expand {
 	position: relative;
 	left: 210px;
+	z-index: 2147483648;
 }
 
 .fa {
@@ -82,9 +84,12 @@ input[type=range]::-webkit-slider-thumb {
 	visibility: visible;
 }
 
+#head-controller {
+	z-index: 2147483648;
+}
+
 #head-controller.hidden {
 	visibility: hidden;
-	z-index: 2147483648;
 }
 
 .hidden {
