@@ -30,7 +30,8 @@ barProgress.addEventListener('change',function(e) {
 video.addEventListener('timeupdate',function() {
 	let rangeValue = Math.round(video.currentTime / (video.duration / 100));
 	barProgress.value = rangeValue;
-	console.log(rangeValue);
+	let sliderBackground = document.querySelector('#bar-div');
+	sliderBackground.style = "width: " + rangeValue + "%;";
 });
 
 let headController = document.getElementById('head-controller');
@@ -48,21 +49,18 @@ video.addEventListener("webkitfullscreenchange",function(){
 
 let volumeProgress = document.querySelector('#volumeProgress');
 volumeProgress.addEventListener('change',function() {
+	this.setAttribute('value',this.value);
 	video.volume = volumeProgress.value / 10;
 });
 
 let volume = document.querySelector('#volume');
 volume.addEventListener('click',function() {
-	if (this.getAttribute('muted') != null) {
-		this.removeAttribute('muted');
-		video.volume = volumeProgress.value / 10
-		this.setAttribute('class','fa fa-volume-up');
-		volumeProgress.removeAttribute('class');
+	if (volumeProgress.value == 0) {
+		volumeProgress.value = volumeProgress.getAttribute('value');
+		video.volume = volumeProgress.value / 10;
 	} else {
-		this.setAttribute('muted','');
-		this.setAttribute('class','fa fa-volume-off');
+		volumeProgress.value = 0;
 		video.volume = 0;
-		volumeProgress.setAttribute('class','hidden');
 	}
 });
 
