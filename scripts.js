@@ -31,7 +31,7 @@ video.addEventListener('timeupdate',function() {
 	let rangeValue = Math.round(video.currentTime / (video.duration / 100));
 	barProgress.value = rangeValue;
 	let sliderBackground = document.querySelector('#bar-div');
-	sliderBackground.style = "width: " + rangeValue + "%;";
+	sliderBackground.style = "width: " + (rangeValue - 2.5) + "%;";
 });
 
 let headController = document.getElementById('head-controller');

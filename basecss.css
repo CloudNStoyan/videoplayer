@@ -38,7 +38,8 @@ input[type=range]::-webkit-slider-thumb {
     width: 15px;
     height: 15px;
     background: white;
-    cursor: pointer;
+	cursor: pointer;
+	z-index: 20;
 }
 
 #progress {
@@ -51,6 +52,16 @@ input[type=range]::-webkit-slider-thumb {
 #bar-div {
 	background-color: black;
 	position: absolute;
+	top: 5px;
+	left: 3px;
+	height: 9px;
+	z-index: 10;
+}
+
+#bar-div-before{
+	background-color: white;
+	position: absolute;
+	width: 100%;
 	top: 5px;
 	left: 3px;
 	height: 9px;
