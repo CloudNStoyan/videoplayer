@@ -1,8 +1,8 @@
-*[hoverable] {
+.hoverable {
 	cursor: pointer;
 }
 
-*[hoverable]:hover {
+.hoverable:hover {
 	color: lightblue;
 }
 
