@@ -5,14 +5,14 @@ let pauseButton = document.querySelector('#pause');
 playButton.addEventListener('click',function(e) {
 	e.preventDefault();
 	video.play();
-	playButton.setAttribute('hidden','');
-	pauseButton.removeAttribute('hidden');
+	playButton.setAttribute('class', playButton.getAttribute('class') + " hidden-none");
+	pauseButton.setAttribute('class', pauseButton.getAttribute('class').replace('hidden-none',''));
 });
 pauseButton.addEventListener('click',function(e) {
 	e.preventDefault();
 	video.pause();
-	pauseButton.setAttribute('hidden','');
-	playButton.removeAttribute('hidden');
+	pauseButton.setAttribute('class', pauseButton.getAttribute('class') + " hidden-none");
+	playButton.setAttribute('class', playButton.getAttribute('class').replace('hidden-none',''));
 });
 video.addEventListener('ended',function() {
 	pauseButton.setAttribute('hidden','');
