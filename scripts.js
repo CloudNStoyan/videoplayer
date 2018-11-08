@@ -40,6 +40,15 @@ document.querySelector('#video-container').addEventListener('dblclick',function(
 	video.webkitEnterFullScreen();
 });
 
+document.querySelector('#video-container').addEventListener('click', function() {
+	if (video.paused) {
+		video.play();
+		console.log(video);
+	} else {
+		video.pause();
+	}
+})
+
 video.addEventListener("webkitfullscreenchange",function(){
     if (!document.webkitIsFullScreen) {
 		console.log("You leaved fullscreen!")
