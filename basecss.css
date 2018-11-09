@@ -20,6 +20,13 @@ main {
 	display: none;
 }
 
+div#video-container > div.overlay {
+	position: absolute;
+	top: 5.3rem;
+	left: 8.1rem;
+	width: 10rem;
+}
+
 input[type=range] {
 	-webkit-appearance: none;
     width: 100%;
@@ -95,6 +102,11 @@ input[type=range]::-webkit-slider-thumb {
 	position: relative;
 	left: 210px;
 	z-index: 2147483648;
+}
+
+.overlay-btn {
+	width: 4rem;
+	height: 4rem;
 }
 
 .fa {
