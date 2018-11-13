@@ -58,6 +58,7 @@ input[type=range]::-webkit-slider-thumb {
 	top: 9.1rem;
 	width: 20rem;
 	left: 0.43rem;
+	z-index: 2147483647;
 }
 
 #bar-div {
@@ -84,6 +85,7 @@ input[type=range]::-webkit-slider-thumb {
 	top: 10.3rem;
 	left: 1.1rem;
 	width: 10rem;
+	z-index: 2147483647;
 }
 
 #controller input[type=range] {
@@ -95,13 +97,11 @@ input[type=range]::-webkit-slider-thumb {
 #volume {
 	position: absolute;
 	left: 11rem;
-	z-index: 2147483648;
 }
 
 #expand {
 	position: relative;
 	left: 210px;
-	z-index: 2147483648;
 }
 
 .overlay-btn {
@@ -123,10 +123,10 @@ input[type=range]::-webkit-slider-thumb {
 }
 
 #head-controller {
-	z-index: 2147483648;
 	user-select: none;
 	background-color: black;
 	opacity: 1;
+	z-index: 2147483647;
 }
 
 #head-controller.hidden {

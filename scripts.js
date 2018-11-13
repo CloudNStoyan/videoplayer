@@ -35,12 +35,13 @@ video.addEventListener('timeupdate',function() {
 });
 
 let headController = document.getElementById('head-controller');
-document.querySelector('#video-container').addEventListener('dblclick',function() {
+let videoContainer = document.querySelector('#video-container');
+videoContainer.addEventListener('dblclick',function() {
 	headController.removeAttribute('class')
 	video.webkitEnterFullScreen();
 });
 
-document.querySelector('#video-container').addEventListener('click', function() {
+videoContainer.addEventListener('click', function() {
 	if (video.paused) {
 		video.play();
 		console.log(video);
