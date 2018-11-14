@@ -118,6 +118,11 @@ input[type=range]::-webkit-slider-thumb {
 	height: 175px
 }
 
+/* 500px or Up */
+@media (min-width: 500px) {
+	
+}
+
 #video-container:hover ~ #head-controller{
 	visibility: visible;
 }
