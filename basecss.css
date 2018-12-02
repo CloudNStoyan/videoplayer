@@ -16,17 +16,6 @@ main {
 	border: 1px solid black;
 }
 
-.hidden-none {
-	display: none;
-}
-
-div#video-container > div.overlay {
-	position: absolute;
-	top: 5.3rem;
-	left: 8.1rem;
-	width: 10rem;
-}
-
 input[type=range] {
 	-webkit-appearance: none;
     width: 100%;
