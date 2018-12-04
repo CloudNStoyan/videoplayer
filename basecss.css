@@ -12,7 +12,6 @@ body {
 
 main {
 	background-color: lightgrey;
-	width: 320px;
 	border: 1px solid black;
 	position: relative;
 }
@@ -89,10 +88,6 @@ input[type=range]::-webkit-slider-thumb {
 
 .fa {
 	font-size: 20px;
-}
-
-#video-container {
-	height: 175px
 }
 
 #video-container:hover ~ #head-controller{
