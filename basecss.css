@@ -58,18 +58,6 @@ input[type=range]::-webkit-slider-thumb {
 
 #controller input[type=range] {
 	width: 35px;
-	position: relative;
-	left: 210px;
-}
-
-#volume {
-	position: absolute;
-	left: 11rem;
-}
-
-#expand {
-	position: relative;
-	left: 210px;
 }
 
 .overlay-btn {
@@ -94,7 +82,7 @@ input[type=range]::-webkit-slider-thumb {
 	flex-flow: column wrap;
 	position: absolute;
 	left: 0; bottom: 0;
-	width: auto;
+	width: 100%;
 }
 
 #head-controller.hidden {
