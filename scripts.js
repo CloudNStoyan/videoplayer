@@ -76,5 +76,10 @@ volume.addEventListener('click',function() {
 
 let expand = document.querySelector('#expand');
 expand.addEventListener('click',function() {
-	video.webkitEnterFullScreen();
+	makeFullscreen();
 })
+
+function makeFullscreen() {
+	//let wrapper = document.getElementById('wrapper');
+	video.setAttribute('data-fullscreen','');
+}

@@ -7,14 +7,14 @@
 </head>
 <body>
 <main>
-	<div id="video-container">
-		<video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
-		<div class="overlay">
-			
+	<div id="wrapper">
+		<div id="video-container">
+			<video id="video" src="https://www.w3schools.com/html/mov_bbb.mp4"></video>
+			<div class="overlay">					
+			</div>
 		</div>
-	</div>
-	<div id="head-controller" class="hidden">
-		<div id="progress" class="control">
+		<div id="head-controller" class="hidden">
+			<div id="progress" class="control">
 			<div id="bar-div" data-value="10"></div>
 			<div id="bar-div-before" data-value="10"></div>
 			<input type="range" min="1" max="100" value="1" id="bar"/>
@@ -26,6 +26,7 @@
 			<input type="range" class="hoverable" min="0" max="10" value="10" id="volumeProgress"/>
 			<i class="fa fa-arrows-alt hoverable" id="expand"></i>
 		</div>
+	</div>
 	</div>
 </main>
 <script src="scripts.js"></script>
